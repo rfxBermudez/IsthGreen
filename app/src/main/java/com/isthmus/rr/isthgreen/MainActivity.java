@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         title = (TextView) findViewById(R.id.title);
-        title.setText("TEST de Android");
+        title.setText("Curso de Android");
         clickMeButton = (Button) findViewById(R.id.buttonClickMe);
         clickMeButton.setOnClickListener(new View.OnClickListener() {
             @Override
