@@ -27,7 +27,9 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".ScanActivity" />
         <activity android:name=".ListActivity" />
-        <activity android:name=".FormActivity"></activity>
+        <activity android:name=".FormActivity" />
+        <activity android:name=".ListDetailActivity" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/menu_home"
-        android:icon="@mipmap/ic_home"
-        android:title="Inicio"
-        android:orderInCategory="1"
-        app:showAsAction="ifRoom"/>
-
-    <item android:id="@+id/menu_list"
-        android:icon="@mipmap/ic_list"
-        android:title="Lista"
-        android:orderInCategory="2"
-        app:showAsAction="ifRoom"/>
-
-    <item android:id="@+id/menu_scan"
-        android:icon="@mipmap/ic_scan"
-        android:title="Escanear"
-        android:orderInCategory="3"
-        app:showAsAction="ifRoom"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu_home"
+    android:icon="@mipmap/ic_home"
+    android:title="Inicio"/>
+<item
+    android:id="@+id/menu_list"
+    android:icon="@mipmap/ic_list"
+    android:title="Lista"/>
+<item
+    android:id="@+id/menu_scan"
+    android:icon="@mipmap/ic_scan"
+    android:title="Escanear"/>
 </menu>

@@ -1,41 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FormActivity">
 
-    <Button
-        android:id="@+id/btnAttach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adjuntar"
-        android:drawableLeft="@mipmap/ic_atach"
-     />
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carton" />
 
-    <Button
-        android:id="@+id/btnPicture"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Foto"
-        android:drawableLeft="@mipmap/ic_camera"
-        />
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnAttach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_atach"
+            android:text="Adjuntar" />
+
+        <Button
+            android:id="@+id/btnPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_camera"
+            android:text="Foto" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/edtQuantity"
-        android:tooltipText="Cantidad"
-        android:hint="Cantidad"
         android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
         android:maxLines="1"
-        android:layout_height="wrap_content" />
+        android:tooltipText="Cantidad" />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar"
         android:layout_marginTop="100dp"
-        />
+        android:text="Enviar" />
 
 </LinearLayout>
