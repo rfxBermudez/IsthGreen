@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:drawableLeft="@mipmap/ic_atach"
-            android:text="Adjuntar" />
+            android:text="@string/attach" />
 
         <Button
             android:id="@+id/btnPicture"
@@ -34,22 +35,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:drawableLeft="@mipmap/ic_camera"
-            android:text="Foto" />
+            android:text="@string/photo" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/edtQuantity"
         android:layout_width="800px"
         android:layout_height="wrap_content"
-        android:hint="Cantidad"
+        android:hint="@string/quantity"
         android:maxLines="1"
-        android:tooltipText="Cantidad" />
+        android:tooltipText="@string/quantity" />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Enviar" />
+        android:text="@string/send" />
+
 
 </LinearLayout>

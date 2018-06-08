@@ -28,6 +28,10 @@ public class HomeActivity extends AppCompatActivity {
         imageView.setImageDrawable(myDrawable);
         textView =  findViewById(R.id.card_view_image_title);
         textView.setText("Duplica tus puntos al reciclar!");
+        configurationMenu();
+    }
+
+    private void configurationMenu(){
         //Configuracion del menú
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -46,24 +50,6 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
-    }
-
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_home:
-                return true;
-            case R.id.menu_list:
-                goList();
-                return true;
-            case R.id.menu_scan:
-                goScan();
-                return true;
-            default:
-                return super.onContextItemSelected(item);
-        }
     }
 
     private void goList(){

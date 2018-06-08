@@ -24,12 +24,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".ScanActivity" />
-        <activity android:name=".ListActivity" />
-        <activity android:name=".FormActivity" />
-        <activity android:name=".ListDetailActivity" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".ScanActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".ListActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity android:name=".FormActivity"
+            android:parentActivityName=".ScanActivity"/>
+        <activity android:name=".ListDetailActivity"
+            android:parentActivityName=".ListActivity"/>
+        <activity android:name=".ResultActivity"
+            android:parentActivityName=".ScanActivity"></activity>
     </application>
 
 </manifest>

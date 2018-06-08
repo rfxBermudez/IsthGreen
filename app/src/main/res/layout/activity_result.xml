@@ -40,7 +40,7 @@
                 android:layout_below="@+id/thumbnail"
                 android:maxLines="3"
                 android:padding="8dp"
-                android:text="Solicitud enviada"
+                android:text="@string/request_sent"
                 android:textColor="#222"
                 android:textSize="22dp"
                 android:textStyle="bold" />
@@ -50,30 +50,18 @@
 
     </android.support.v7.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/LinearLayout02"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="7dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/btnRecycle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Reciclar" />
-
-        <Button
-            android:id="@+id/btnHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Regresar" />
-    </LinearLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_home" />
 
 
 </android.support.constraint.ConstraintLayout>
