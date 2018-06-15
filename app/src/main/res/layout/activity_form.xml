@@ -38,13 +38,35 @@
             android:text="@string/photo" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edtQuantity"
-        android:layout_width="800px"
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/quantity"
-        android:maxLines="1"
-        android:tooltipText="@string/quantity" />
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/edtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:maxLines="1"
+            android:tooltipText="@string/quantity"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"/>
+
+        <Spinner
+            android:id="@+id/spnQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+
 
     <Button
         android:id="@+id/btnSend"
